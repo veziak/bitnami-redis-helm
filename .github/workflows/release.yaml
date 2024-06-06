@@ -47,5 +47,5 @@ jobs:
             if [ -z "${pkg:-}" ]; then
               break
             fi
-            helm push "${pkg}" oci://ghcr.io/${{ env.REPOSITORY_OWNER }}/${{ env.REPOSITORY }}
+            helm push "${pkg}" oci://ghcr.io/veziak/bitnami-redis-helm
           done
